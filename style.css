@@ -1,0 +1,71 @@
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "titre bloc-preparation"
+    "bloc-nombre-personnes bloc-preparation"; 
+}
+.bloc-preparation { grid-area: bloc-preparation; }
+.titre { grid-area: titre; }
+.bloc-nombre-personnes { grid-area: bloc-nombre-personnes; 
+}
+
+.nombre-personnes{
+    background: rgba(211,211,211,0.5);
+    border: solid 0.1em lightgrey;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.preparation{
+    background: rgba(211,211,211,0.5);
+    border: solid 0.1em lightgrey;
+    height: 40em;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 1%;
+    border-radius: 1em;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.span-ingredient {
+    background-color: lightgrey;
+    border: solid 0.1em grey;
+    padding: 2px;
+    margin: 5px;
+}
+
+header {
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.button{
+    background-color: lightgrey;
+    border: solid 0.1em grey;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    background-color: lightgrey;
+    border: solid 0.1em grey;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+}
